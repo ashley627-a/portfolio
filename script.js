@@ -729,6 +729,71 @@ window.addEventListener('load', () => {
     }, 100);
 });
 
+// Simple carousel initializer for about -> My Background
+function initBackgroundCarousels() {
+    const wraps = document.querySelectorAll('.carousel-wrap');
+    wraps.forEach(wrap => {
+        const rail = wrap.querySelector('.carousel-rail');
+        const cards = Array.from(rail.querySelectorAll('.carousel-card'));
+        const prev = wrap.querySelector('.carousel-prev');
+        const next = wrap.querySelector('.carousel-next');
+        const dots = Array.from(wrap.querySelectorAll('.carousel-dot'));
+        if (!rail || !cards.length) return;
+
+        let index = 0;
+        const scrollToIndex = (i) => {
+            const card = cards[i];
+            if (!card) return;
+            const left = card.offsetLeft - (rail.clientWidth - card.clientWidth)/2;
+            rail.scrollTo({ left, behavior: 'smooth' });
+            index = i;
+            // update dots
+            dots.forEach(d => d.classList.remove('is-active'));
+            const activeDot = wrap.querySelector(`.carousel-dot[data-index="${i}"]`);
+            if (activeDot) activeDot.classList.add('is-active');
+        };
+
+        prev && prev.addEventListener('click', () => {
+            const nextIndex = Math.max(0, index - 1);
+            scrollToIndex(nextIndex);
+        });
+        next && next.addEventListener('click', () => {
+            const nextIndex = Math.min(cards.length - 1, index + 1);
+            scrollToIndex(nextIndex);
+        });
+
+        dots.forEach((d, i) => {
+            d.addEventListener('click', () => scrollToIndex(i));
+        });
+
+        // Update index on manual scroll - snap to nearest
+        let scrollTimeout = null;
+        rail.addEventListener('scroll', () => {
+            if (scrollTimeout) clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                // find nearest card center
+                const center = rail.scrollLeft + rail.clientWidth/2;
+                let nearest = 0;
+                let minDist = Infinity;
+                cards.forEach((c, idx) => {
+                    const cCenter = c.offsetLeft + c.clientWidth/2;
+                    const dist = Math.abs(center - cCenter);
+                    if (dist < minDist) { minDist = dist; nearest = idx; }
+                });
+                index = nearest;
+                dots.forEach(d => d.classList.remove('is-active'));
+                const activeDot = wrap.querySelector(`.carousel-dot[data-index="${index}"]`);
+                if (activeDot) activeDot.classList.add('is-active');
+            }, 120);
+        }, { passive: true });
+    });
+}
+
+// initialize after DOM ready
+document.addEventListener('DOMContentLoaded', () => {
+    initBackgroundCarousels();
+});
+
 // Timeline modal initializer
 function initTimeline() {
   const stageData = {
