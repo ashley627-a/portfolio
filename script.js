@@ -722,7 +722,8 @@ document.addEventListener('DOMContentLoaded', () => {
 // Add loading animation delay for initial elements
 window.addEventListener('load', () => {
     setTimeout(() => {
-        document.querySelectorAll('.animate-in.fade-in, .animate-in.slide-in-from-bottom').forEach(element => {
+        // Ensure elements intended to animate are visible if IntersectionObserver missed them
+        document.querySelectorAll('.animate-in.fade-in, .animate-in.slide-in-from-bottom, .fade-in').forEach(element => {
             element.classList.add('animate-in');
         });
     }, 100);
