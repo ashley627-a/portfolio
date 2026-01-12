@@ -729,6 +729,16 @@ window.addEventListener('load', () => {
     }, 100);
 });
 
+// Initialize scrapbook random rotations (small nudge for playful energy)
+document.addEventListener('DOMContentLoaded', () => {
+    const photos = document.querySelectorAll('.scrap-photo');
+    photos.forEach((el, idx) => {
+        const base = parseFloat(getComputedStyle(el).getPropertyValue('--rot')) || 0;
+        const jitter = (Math.random() * 6) - 3; // -3 to +3 deg
+        el.style.transform = `rotate(${base + jitter}deg)`;
+    });
+});
+
 // Timeline modal initializer
 function initTimeline() {
   const stageData = {
