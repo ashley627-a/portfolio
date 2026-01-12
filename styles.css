@@ -1505,6 +1505,13 @@ body {
 .mosaic-list li { position: relative; padding-left: 1.1rem; margin-bottom:0.35rem; font-size:0.9rem; line-height:1.3; }
 .mosaic-list li::before { content: ''; position: absolute; left: 0; top: 0.45rem; width: 8px; height:8px; background:#F94762; border-radius:50%; }
 
+/* Bolded keywords inside mosaic lists should use red accent */
+.mosaic-list strong,
+.mosaic-list b {
+  color: #F94762;
+  font-weight: 700;
+}
+
 @media (min-width: 768px) {
   /* On wider screens, stack the mosaic into three vertical rows (single column) */
   .mosaic-grid { grid-template-columns: 1fr; gap: 1.25rem; align-items: start; }
