@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReCat Case Study | Ashley Guo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="has-hero-image">
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a class="btn btn-ghost" href="index.html" aria-label="Back to home">← Back to home</a>
+            </div>
+            <div class="nav-links">
+                <a class="btn btn-primary" href="https://www.linkedin.com/in/ashley-guo-175a07217/" target="_blank" rel="noopener noreferrer">Let's connect on LinkedIn</a>
+            </div>
+        </div>
+    </nav>
+    <div class="nav-gap" aria-hidden="true"></div>
+
+    <nav class="fixed bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 z-[9999] w-[90%] md:w-auto max-w-[95vw] pointer-events-none case-nav-pill">
+      <div class="pointer-events-auto bg-white/95 backdrop-blur-2xl border border-zinc-200 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)] rounded-2xl p-1.5 flex items-center gap-1 overflow-x-auto no-scrollbar">
+        <a
+          href="#rc-abstract"
+          onclick="event.preventDefault(); const target1 = document.getElementById('rc-abstract'); if (target1) { window.scrollTo({ top: target1.offsetTop - 100, behavior: 'smooth' }); }"
+          class="nav-item shrink-0 group px-3 md:px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all text-zinc-500 hover:bg-zinc-50"
+        >
+          <div class="dot w-2 h-2 rounded-full transition-all scale-0 opacity-0" style="background-color: #FFD37F;"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Summary</span>
+        </a>
+        <a
+          href="#rc-role"
+          onclick="event.preventDefault(); const target2 = document.getElementById('rc-role'); if (target2) { window.scrollTo({ top: target2.offsetTop - 100, behavior: 'smooth' }); }"
+          class="nav-item shrink-0 group px-3 md:px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all text-zinc-500 hover:bg-zinc-50"
+        >
+          <div class="dot w-2 h-2 rounded-full transition-all scale-0 opacity-0" style="background-color: #FFD37F;"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Role</span>
+        </a>
+        <a
+          href="#rc-context"
+          onclick="event.preventDefault(); const target3 = document.getElementById('rc-context'); if (target3) { window.scrollTo({ top: target3.offsetTop - 100, behavior: 'smooth' }); }"
+          class="nav-item shrink-0 group px-3 md:px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all text-zinc-500 hover:bg-zinc-50"
+        >
+          <div class="dot w-2 h-2 rounded-full transition-all scale-0 opacity-0" style="background-color: #FFD37F;"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Context</span>
+        </a>
+        <a
+          href="#rc-methods"
+          onclick="event.preventDefault(); const target4 = document.getElementById('rc-methods'); if (target4) { window.scrollTo({ top: target4.offsetTop - 100, behavior: 'smooth' }); }"
+          class="nav-item shrink-0 group px-3 md:px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all text-zinc-500 hover:bg-zinc-50"
+        >
+          <div class="dot w-2 h-2 rounded-full transition-all scale-0 opacity-0" style="background-color: #FFD37F;"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Methods</span>
+        </a>
+        <a
+          href="#rc-findings"
+          onclick="event.preventDefault(); const target5 = document.getElementById('rc-findings'); if (target5) { window.scrollTo({ top: target5.offsetTop - 100, behavior: 'smooth' }); }"
+          class="nav-item shrink-0 group px-3 md:px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all text-zinc-500 hover:bg-zinc-50"
+        >
+          <div class="dot w-2 h-2 rounded-full transition-all scale-0 opacity-0" style="background-color: #FFD37F;"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Findings</span>
+        </a>
+        <a
+          href="#rc-solution"
+          onclick="event.preventDefault(); const target6 = document.getElementById('rc-solution'); if (target6) { window.scrollTo({ top: target6.offsetTop - 100, behavior: 'smooth' }); }"
+          class="nav-item shrink-0 group px-3 md:px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all text-zinc-500 hover:bg-zinc-50"
+        >
+          <div class="dot w-2 h-2 rounded-full transition-all scale-0 opacity-0" style="background-color: #FFD37F;"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Implications</span>
+        </a>
+        <a
+          href="#rc-outcomes"
+          onclick="event.preventDefault(); const target7 = document.getElementById('rc-outcomes'); if (target7) { window.scrollTo({ top: target7.offsetTop - 100, behavior: 'smooth' }); }"
+          class="nav-item shrink-0 group px-3 md:px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all text-zinc-500 hover:bg-zinc-50"
+        >
+          <div class="dot w-2 h-2 rounded-full transition-all scale-0 opacity-0" style="background-color: #FFD37F;"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Impact</span>
+        </a>
+      </div>
+    </nav>
+
+    <div class="fade-in bg-white min-h-screen">
+    <main id="main-content">
+        <header id="rc-hero" class="pt-20 md:pt-24 pb-8 md:pb-12 px-6 max-w-[1200px] mx-auto text-center">
+            <img src="assets/recat hero image.png" alt="ReCat hero" class="linkedin-hero-img">
+            <div class="inline-flex items-center gap-2 mb-6 md:mb-8">
+                <div class="case-tags">
+                    <span class="case-tag">0→1 Research</span>
+                    <span class="case-tag">Startup</span>
+                    <span class="case-tag">Consumer Product</span>
+                </div>
+            </div>
+            
+            <h1 class="text-3xl md:text-5xl lg:text-7xl font-extrabold text-zinc-900 mb-6 md:mb-8 leading-[1.1] tracking-tight max-w-4xl mx-auto">
+              Helping Couples Feel <span class="text-[#F8D38B] drop-shadow-sm italic">Emotionally Close</span> While Apart
+            </h1>
+            
+        </header>
+
+        <section id="rc-abstract" class="py-12 md:py-20 border-t border-zinc-50">
+            <div class="max-w-[900px] mx-auto px-6">
+                <h2 class="text-xs font-bold tracking-[0.2em] text-[#4a5d47] uppercase mb-8 md:mb-12 flex items-center gap-4">
+                    <span class="h-px w-6 md:w-8 bg-[#CDDDC8] inline-block"></span>
+                    Research Abstract
+                </h2>
+                <p class="text-zinc-600 text-lg md:text-xl leading-relaxed font-light">
+                  Recat is a platform designed to deepen emotional intimacy for Gen-Z and young adult couples. As a lead researcher and co-founder, I led the product from early discovery through a successful App Store launch. Our research identified that while communication frequency was high, depth was lacking. We solved this by reframing gratitude as a shared repeatable habit.
+                </p>
+            </div>
+        </section>
+
+        <section id="rc-role" class="py-12 md:py-16 bg-[#CDDDC8]/10 border-y border-[#CDDDC8]/20">
+            <div class="max-w-[900px] mx-auto px-6 grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-12">
+                <div>
+                    <h4 class="font-bold text-zinc-900 text-[10px] uppercase tracking-widest mb-3 md:mb-4">Role</h4>
+                    <p class="text-zinc-600 text-sm md:text-base">Lead UX Researcher, Co‑founder</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-zinc-900 text-[10px] uppercase tracking-widest mb-3 md:mb-4">Timeline</h4>
+                    <p class="text-zinc-600 text-sm md:text-base">10 months</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-zinc-900 text-[10px] uppercase tracking-widest mb-4">Team</h4>
+                    <p class="text-zinc-600 text-sm md:text-base">7 members (Design, Engineering, Product)</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="rc-context" class="py-12 md:py-20 bg-white">
+            <div class="max-w-[900px] mx-auto px-6">
+                <h3 class="text-2xl md:text-4xl font-bold text-zinc-900 leading-tight mb-6 md:mb-8">When Texting Isn’t Enough</h3>
+                <p class="text-zinc-500 text-base md:text-lg leading-relaxed">Digital communication is central to Gen-Z and young adult relationships, yet it often feels shallow. Texting is convenient, but it rarely supports the intentional connection needed for deeper emotional intimacy.</p>
+
+                <div class="float-left w-[346px] md:w-[462px] mr-6 mb-6 md:mr-8 md:mb-8 rounded-2xl overflow-hidden shadow-sm">
+                  <img src="assets/recat user talk.png" alt="People texting illustration" class="w-full h-auto block" />
+                </div>
+            </div>
+        </section>
+
+        <section id="rc-methods" class="pt-20 md:pt-32 pb-16 md:pb-28 bg-zinc-900 text-white" style="clear: both; position: relative;">
+            <div class="max-w-[900px] mx-auto px-6">
+                <h2 class="text-xs font-bold tracking-[0.2em] text-[#CDDDC8] uppercase mb-12 md:mb-16 flex items-center gap-4">Research Methods</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                    <div class="p-6 md:p-8 bg-white/5 rounded-2xl border border-white/10">
+                      <div class="text-2xl font-black mb-2 text-[#CDDDC8]">80+</div>
+                      <h4 class="font-bold mb-3 md:mb-4">In-depth Interviews</h4>
+                      <p class="text-zinc-400 text-sm leading-relaxed">(30 min each, 4 rounds) mapping how people maintain emotional closeness online and what makes interactions impactful.</p>
+                    </div>
+                    <div class="p-6 md:p-8 bg-white/5 rounded-2xl border border-white/10">
+                      <div class="text-2xl font-black mb-2 text-[#CDDDC8]">72</div>
+                      <h4 class="font-bold mb-3 md:mb-4">Survey Responses</h4>
+                      <p class="text-zinc-400 text-sm leading-relaxed">quantitatively validating patterns identified during qualitative discovery sessions.</p>
+                    </div>
+                    <div class="p-6 md:p-8 bg-white/5 rounded-2xl border border-white/10">
+                      <div class="text-2xl font-black mb-2 text-[#CDDDC8]">22</div>
+                      <h4 class="font-bold mb-4">Usability Tests</h4>
+                      <p class="text-zinc-400 text-sm leading-relaxed">conducted to evaluate early concepts and user flows, refining the experience of giving gratitude.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rc-findings" class="py-16 md:py-28 bg-white">
+            <div class="max-w-[900px] mx-auto px-6">
+                <h2 class="text-xs font-bold tracking-[0.2em] text-[#4a5d47] uppercase mb-12 md:mb-16 flex items-center gap-4">
+                    <span class="h-px w-6 md:w-8 bg-[#4a5d47] inline-block"></span>
+                    Key Findings
+                </h2>
+
+                <div class="space-y-8 md:space-y-12">
+                    <div class="p-6 md:p-10 bg-[#CFE7F3]/10 rounded-[1.5rem] md:rounded-[2rem] border border-[#CFE7F3]/30">
+                      <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-[#CFE7F3]/20 rounded-xl flex items-center justify-center">
+                          <svg class="w-6 h-6 text-[#1e3a4a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                          </svg>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold text-zinc-900">Feeling Insecure</h3>
+                      </div>
+
+                      <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                          <span class="text-[10px] font-bold text-[#DC2626] bg-[#FFE5E5] uppercase tracking-widest w-[96px] py-1 rounded-full whitespace-nowrap mt-1 inline-flex items-center justify-center flex-none" style="flex:0 0 96px;width:96px;min-width:96px;">Pain</span>
+                          <p class="text-zinc-600 text-sm md:text-base leading-relaxed">Partners overthink interactions and worry whether the other truly cares.</p>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                          <span class="text-[10px] font-bold text-[#6B7280] bg-[#F3F4F6] uppercase tracking-widest w-[96px] py-1 rounded-full whitespace-nowrap mt-1 inline-flex items-center justify-center flex-none" style="flex:0 0 96px;width:96px;min-width:96px;">Insight</span>
+                          <p class="text-zinc-600 text-sm md:text-base leading-relaxed">High-frequency messaging doesn't guarantee emotional connection. Interactions are often short and surface-level.</p>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                          <span class="text-[10px] font-bold text-[#059669] bg-[#ECFDF5] uppercase tracking-widest w-[96px] py-1 rounded-full whitespace-nowrap mt-1 inline-flex items-center justify-center flex-none" style="flex:0 0 96px;width:96px;min-width:96px;">Design</span>
+                          <p class="text-zinc-600 text-sm md:text-base leading-relaxed">Focus on fostering meaningful, intentional interactions rather than the quantity of messages.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-6 md:p-10 bg-[#CDDDC8]/10 rounded-[1.5rem] md:rounded-[2rem] border border-[#CDDDC8]/30">
+                      <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-[#CDDDC8]/20 rounded-xl flex items-center justify-center">
+                          <svg class="w-6 h-6 text-[#2d3d2a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                          </svg>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold text-zinc-900">Difficulty Opening Up</h3>
+                      </div>
+
+                      <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                          <span class="text-[10px] font-bold text-[#DC2626] bg-[#FFE5E5] uppercase tracking-widest w-[96px] py-1 rounded-full whitespace-nowrap mt-1 inline-flex items-center justify-center flex-none" style="flex:0 0 96px;width:96px;min-width:96px;">Pain</span>
+                          <p class="text-zinc-600 text-sm md:text-base leading-relaxed">When apart, it's hard to verbalize feelings over text, leading to misunderstandings and frustration.</p>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                          <span class="text-[10px] font-bold text-[#6B7280] bg-[#F3F4F6] uppercase tracking-widest w-[96px] py-1 rounded-full whitespace-nowrap mt-1 inline-flex items-center justify-center flex-none" style="flex:0 0 96px;width:96px;min-width:96px;">Insight</span>
+                          <p class="text-zinc-600 text-sm md:text-base leading-relaxed">Texting can make vulnerability feel exposed and awkward. Without in-person cues, partners struggle to convey emotions fully.</p>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                          <span class="text-[10px] font-bold text-[#059669] bg-[#ECFDF5] uppercase tracking-widest w-[96px] py-1 rounded-full whitespace-nowrap mt-1 inline-flex items-center justify-center flex-none" style="flex:0 0 96px;width:96px;min-width:96px;">Design</span>
+                          <p class="text-zinc-600 text-sm md:text-base leading-relaxed"> Provide gentle support or shared activities to make emotional sharing feel easier and more natural.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-6 md:p-10 bg-[#F8D38B]/10 rounded-[1.5rem] md:rounded-[2rem] border border-[#F8D38B]/30">
+                      <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-[#F8D38B]/20 rounded-xl flex items-center justify-center">
+                          <svg class="w-6 h-6 text-[#8b6a2a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                          </svg>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold text-zinc-900">Feeling Underappreciated </h3>
+                      </div>
+
+                      <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                          <span class="text-[10px] font-bold text-[#DC2626] bg-[#FFE5E5] uppercase tracking-widest w-[96px] py-1 rounded-full whitespace-nowrap mt-1 inline-flex items-center justify-center flex-none" style="flex:0 0 96px;width:96px;min-width:96px;">Pain</span>
+                          <p class="text-zinc-600 text-sm md:text-base leading-relaxed">People forget to acknowledge small gestures or struggles, leaving partners feeling unappreciated.</p>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                          <span class="text-[10px] font-bold text-[#6B7280] bg-[#F3F4F6] uppercase tracking-widest w-[96px] py-1 rounded-full whitespace-nowrap mt-1 inline-flex items-center justify-center flex-none" style="flex:0 0 96px;width:96px;min-width:96px;">Insight</span>
+                          <p class="text-zinc-600 text-sm md:text-base leading-relaxed">Even caring partners often skip expressing gratitude, which can erode closeness over time.</p>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                          <span class="text-[10px] font-bold text-[#059669] bg-[#ECFDF5] uppercase tracking-widest w-[96px] py-1 rounded-full whitespace-nowrap mt-1 inline-flex items-center justify-center flex-none" style="flex:0 0 96px;width:96px;min-width:96px;">Design</span>
+                          <p class="text-zinc-600 text-sm md:text-base leading-relaxed">Create structured, simple ways to acknowledge small aacts and express appreciation.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- original prototype-insight section removed per user request; keeping new prototype section below -->
+
+        <section id="rc-prototype" class="py-16 md:py-10 bg-[#fafafa]">
+            <div class="max-w-[900px] mx-auto px-6">
+                <h2 class="text-xs font-bold tracking-[0.2em] text-zinc-900 uppercase mb-8 md:mb-10 flex items-center gap-4">
+                    <span class="h-px w-6 md:w-8 bg-zinc-900 inline-block"></span>
+                    Prototype Insight
+                </h2>
+
+                <p class="text-zinc-600 text-base md:text-lg leading-relaxed mb-8">
+Our interviews and secondary research revealed the importance of mutual appreciation in relationships.
+<br><br>
+BUT!
+After testing prototypes with couples, we found that people often lose motivation to send gratitude. We realized that couples need a reason to come back and engage consistently.
+                </p>
+
+                <!-- Gamification Insight -->
+                <div class="banner-row">
+                  <div class="bg-gradient-to-r from-[#FFD37F]/20 to-[#F8D38B]/10 rounded-2xl border border-[#FFD37F]/30 mb-8 compact-banner">
+                  <div class="flex items-center justify-start gap-3 mb-2">
+                      <div class="w-10 h-10 bg-[#FFD37F]/20 rounded-xl flex items-center justify-center">
+                        <svg class="w-5 h-5 text-[#8b6a2a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                        </svg>
+                      </div>
+                      <h3 class="text-lg md:text-xl font-bold text-zinc-900 text-left">What if we incorporated gamification?</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Funnel: vertical stacked cards -->
+                <div class="funnel max-w-[720px] mx-auto">
+                  <article class="funnel-card animate-in slide-in-from-bottom duration-700 reveal-up" data-stage="1" tabindex="0" aria-labelledby="funnel-1-title">
+                    <div class="funnel-card-inner flex items-start gap-4">
+                      <div class="funnel-icon w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center">
+                        <!-- Broken heart icon -->
+                        <svg class="w-6 h-6 text-zinc-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/>
+                          <path d="M13.5 5.5 L11.5 8 L14 10.5 L10.5 14 L13 17" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 id="funnel-1-title" class="font-bold text-zinc-900 text-lg md:text-xl mb-2">Forgetting Gratitude</h4>
+                        <p class="text-zinc-400 text-sm md:text-base">Without being prompted, couples often forget to express appreciation for small, everyday things.</p>
+                      </div>
+                    </div>
+                  </article>
+
+                  <div class="funnel-connector" aria-hidden="true"></div>
+
+                  <article class="funnel-card animate-in slide-in-from-bottom duration-700 reveal-up delay-200" data-stage="2" tabindex="0" aria-labelledby="funnel-2-title">
+                    <div class="funnel-card-inner flex items-start gap-4">
+                      <div class="funnel-icon w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center">
+                        <!-- Cat paw icon -->
+                        <svg class="w-6 h-6 text-zinc-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                          <circle cx="7.2" cy="7.5" r="1.4" />
+                          <circle cx="11.9" cy="6.2" r="1.6" />
+                          <circle cx="16.6" cy="7.5" r="1.4" />
+                          <path d="M12 11c-2.5 0-4.5 2.2-4.5 4.2 0 1.8 2 3.6 4.5 3.6s4.5-1.8 4.5-3.6C16.5 13.2 14.5 11 12 11z"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 id="funnel-2-title" class="font-bold text-zinc-900 text-lg md:text-xl mb-2">Engaging with the Pet</h4>
+                        <p class="text-zinc-400 text-sm md:text-base">Interacting with something like a virtual pet gives couples a low-effort, emotional reason to return and do something together.</p>
+                      </div>
+                    </div>
+                  </article>
+
+                  <div class="funnel-connector" aria-hidden="true"></div>
+
+                  <article class="funnel-card animate-in slide-in-from-bottom duration-700 reveal-up delay-400" data-stage="3" tabindex="0" aria-labelledby="funnel-3-title">
+                    <div class="funnel-card-inner flex items-start gap-4">
+                      <div class="funnel-icon w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center">
+                        <!-- Heart icon -->
+                        <svg class="w-6 h-6 text-zinc-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 id="funnel-3-title" class="font-bold text-zinc-900 text-lg md:text-xl mb-2">Expressing Appreciation Naturally</h4>
+                        <p class="text-zinc-400 text-sm md:text-base">Once engaged, expressing gratitude becomes more natural and habitual on the app.</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="rc-solution" class="py-16 md:py-28 bg-[#fafafa]">
+            <div class="max-w-[900px] mx-auto px-6">
+                <h2 class="text-xs font-bold tracking-[0.2em] text-zinc-900 uppercase mb-12 md:mb-16 flex items-center gap-4">
+                    <span class="h-px w-6 md:w-8 bg-zinc-900 inline-block"></span>
+                    Product Implications
+                </h2>
+
+                <div class="grid gap-12 md:gap-16">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                      <div class="order-2 md:order-1">
+                          <h3 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6">Send Letters to Each Other</h3>
+                          <p class="text-zinc-600 mb-6 md:mb-8 leading-relaxed text-sm md:text-base">Send thoughtful notes of appreciation, for the smallest things! </p>
+                          <div class="bg-[#CFE7F3]/40 p-4 md:p-6 rounded-xl md:rounded-2xl border border-[#CFE7F3] italic text-xs md:text-sm text-[#1e3a4a]">
+                              Chris(20 yo): "I didn't realize how many small things my partner appreciated until this app."
+                          </div>
+                      </div>
+                      <div class="order-1 md:order-2 aspect-square md:aspect-[4/5] rounded-2xl md:rounded-3xl overflow-hidden shadow-sm flex items-center justify-center">
+                          <img src="assets/Recat feature 1.png" alt="Recat feature: letters" class="w-full h-auto block" />
+                      </div>
+                    </div>
+
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                      <div class="aspect-square md:aspect-[4/5] rounded-2xl md:rounded-3xl overflow-hidden flex items-center justify-center">
+                          <img src="assets/recat feature 2.png" alt="Recat feature: rewards" class="w-full h-auto block" />
+                      </div>
+                      <div>
+                          <h3 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6">Earning Rewards </h3>
+                          <p class="text-zinc-600 mb-6 md:mb-8 leading-relaxed text-sm md:text-base">Every gratitude letter earns fish points, which can be used to buy treats and care items for your cat.</p>
+                          <ul class="space-y-2 md:space-y-3 text-[#8b6a2a] font-bold text-sm">
+                              <li class="flex gap-3"><span class="text-[#F8D38B]">•</span> Reinforces consistency</li>
+                              <li class="flex gap-3"><span class="text-[#F8D38B]">•</span> Creates shared goals</li>
+                          </ul>
+                      </div>
+                    </div>
+
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                      <div class="order-2 md:order-1">
+                          <h3 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6">Caring for the Cat Together</h3>
+                          <p class="text-zinc-600 mb-6 md:mb-8 leading-relaxed text-sm md:text-base">By feeding the virtual cat, couples see their pet grow happier and healthier. </p>
+                          <div class="bg-[#CDDDC8]/40 p-4 md:p-6 rounded-xl md:rounded-2xl border border-[#CDDDC8] italic text-xs md:text-sm text-[#2d3d2a]">
+                              Anna(22 yo): "Whenever we FaceTime, we end up talking about feeding our cat, it’s kind of become our inside joke."
+                          </div>
+                      </div>
+                      <div class="order-1 md:order-2 aspect-square md:aspect-[4/5] rounded-2xl md:rounded-3xl overflow-hidden flex items-center justify-center">
+                          <img src="assets/recat feature 3.png" alt="Recat feature: virtual cat" class="w-11/12 md:w-3/4 h-auto block mx-auto" />
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="rc-prototype-testing" class="py-4 md:py-6 bg-white">
+          <div class="max-w-[1200px] mx-auto px-6">
+            <h2 class="text-xs font-bold tracking-[0.2em] text-zinc-900 uppercase mb-8 md:mb-10 flex items-center gap-4">
+              <span class="h-px w-6 md:w-8 bg-zinc-900 inline-block"></span>
+              Prototype Testing
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-start">
+              <div class="flex flex-col gap-3">
+                <div class="rounded-xl overflow-hidden">
+                  <img src="assets/recat mvp test 1.png" alt="Recat MVP test 1" class="w-11/12 md:w-3/5 h-40 md:h-56 object-cover block mx-auto" />
+                </div>
+                <p class="text-zinc-700 text-sm md:text-base leading-relaxed w-11/12 md:w-3/5 mx-auto">After creating the MVP, I conducted usability testing to gauge user satisfaction and the effectiveness of each feature.</p>
+              </div>
+
+              <div class="flex flex-col gap-3">
+                <div class="rounded-xl overflow-hidden">
+                  <img src="assets/recat mvp test 2.png" alt="Recat MVP test 2" class="w-11/12 md:w-3/4 h-44 md:h-60 object-cover block mx-auto" />
+                </div>
+                <p class="text-zinc-700 text-sm md:text-base leading-relaxed w-11/12 md:w-3/5 mx-auto">These research insights helped me lead production, allowing me to prioritize features that would have a high impact and low development cost.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="rc-launch" class="py-6 md:py-10 bg-[#fafafa]">
+            <div class="max-w-[1200px] mx-auto px-6">
+                <h2 class="text-xs font-bold tracking-[0.2em] text-zinc-900 uppercase mb-6 md:mb-8 flex items-center gap-4">
+                    <span class="h-px w-6 md:w-8 bg-zinc-900 inline-block"></span>
+                    ReCat on App Store
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+                    <div class="order-1 md:order-1 md:col-span-2">
+                        <div class="rounded-2xl p-4 md:p-6 -mt-10 md:-mt-16">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/recat app store 1.png" alt="Recat app store screenshot 1" class="w-full h-auto block" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-2 md:order-2 md:col-span-1">
+                        <div class="md:pl-8 w-full flex flex-col">
+                            <div class="md:max-w-[420px]">
+                            <h3 class="text-xl md:text-2xl font-extrabold text-zinc-900 mb-4">Launched the app on the App Store to quickly gather <span class="font-extrabold">feedback</span> from real couples.</h3>
+                            <p class="text-zinc-700 text-base md:text-md leading-relaxed mb-4">Using Mixpanel, tracked key metrics like <span class="font-extrabold">user activation and engagement</span>, to refine the app based on their input.</p>
+                            </div>
+
+                            <div class="mt-4 md:mt-6 w-full">
+                                <div class="overflow-hidden w-full">
+                                    <img src="assets/recat app store 2.png" alt="Recat app store screenshot 2" class="w-full h-auto block transform md:scale-110" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rc-outcomes" class="py-16 md:py-20 bg-white">
+            <div class="max-w-[900px] mx-auto px-6">
+                <h2 class="text-xs font-bold tracking-[0.2em] text-[#4a5d47] uppercase mb-12 md:mb-16 flex items-center gap-4">
+                    <span class="h-px w-6 md:w-8 bg-[#4a5d47] inline-block"></span>
+                    Measured Impact
+                </h2>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-12 md:mb-20">
+                    <div class="p-6 md:p-8 bg-[#CFE7F3]/10 rounded-2xl md:rounded-3xl border border-[#CFE7F3]/30 text-center">
+                        <div class="text-2xl md:text-4xl font-black text-[#1e3a4a] mb-2">150+</div>
+                        <p class="text-[10px] uppercase font-bold tracking-widest text-zinc-400">Installs in 1st Month</p>
+                    </div>
+                    <div class="p-6 md:p-8 bg-[#F8D38B]/10 rounded-3xl border border-[#F8D38B]/30 text-center">
+                        <div class="text-2xl md:text-4xl font-black text-[#8b6a2a] mb-2">38.5%</div>
+                        <p class="text-[10px] uppercase font-bold tracking-widest text-zinc-400">Notification CTR</p>
+                    </div>
+                    <div class="p-6 md:p-8 bg-[#CDDDC8]/10 rounded-2xl md:rounded-3xl border border-[#CDDDC8]/30 text-center">
+                        <div class="text-2xl md:text-4xl font-black text-[#2d3d2a] mb-2">6 min</div>
+                        <p class="text-[10px] uppercase font-bold tracking-widest text-zinc-400">Avg. Session</p>
+                    </div>
+                    <div class="p-6 md:p-8 bg-[#CFE7F3]/10 rounded-2xl md:rounded-3xl border border-[#CFE7F3]/30 text-center">
+                        <div class="text-2xl md:text-4xl font-black text-[#1e3a4a] mb-2">9</div>
+                        <p class="text-[10px] uppercase font-bold tracking-widest text-zinc-400">Letters Weekly</p>
+                    </div>
+                </div>
+
+              
+            </div>
+        </section>
+
+    
+        <section class="py-16 md:py-32 bg-zinc-900 text-white">
+            <div class="max-w-[900px] mx-auto px-6">
+                <h2 class="text-xs font-bold tracking-[0.2em] text-[#CDDDC8] uppercase mb-12 md:mb-16">Learnings & Reflection</h2>
+                <div class="grid grid-cols-1 gap-10 md:gap-12">
+                    <div class="space-y-3 md:space-y-4">
+                        <h4 class="font-bold text-white text-lg md:text-xl">Aligning early on feasibility</h4>
+                        <p class="text-zinc-400 leading-relaxed text-sm md:text-base">Being both a researcher and a co-founder meant I was constantly working alongside product, engineering, and design. I learned to sanity-check ideas early, so research led to features we could actually build.</p>
+                    </div>
+                    <div class="space-y-4 md:space-y-6">
+                        <h4 class="font-bold text-white text-lg md:text-xl">Doing just enough research</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                          <div>
+                              <p class="text-[#F8D38B] font-bold text-[10px] md:text-xs uppercase mb-2">Balancing curiosity with progress</p>
+                              <p class="text-zinc-400 leading-relaxed text-sm md:text-base">I learned to right-size my research. Some questions needed deep exploration; others only needed a quick signal. Instead of defaulting to “go deeper,” I chose the level of effort based on what stage we were in and how fast the team needed to move.</p>
+                          </div>
+                          <div>
+                              <p class="text-[#CDDDC8] font-bold text-[10px] md:text-xs uppercase mb-2">Research with purpose</p>
+                              <p class="text-zinc-400 leading-relaxed text-sm md:text-base">I became intentional about why I was doing each study, clarifying the research goal upfront and asking myself: “Will this question actually help the team make a decislion?"</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typographic band (Option 2) - no Summary -->
+        <div class="case-nav-typographic">
+          <div class="case-nav-inner flex justify-center gap-4">
+            <a href="tiktok.html" class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white text-zinc-700 hover:bg-zinc-100 border border-zinc-200 shadow-sm transition-all" aria-label="Previous project: TikTok">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+              <span class="font-medium">Previous</span>
+            </a>
+            <a href="linkedin.html" class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white text-zinc-700 hover:bg-zinc-100 border border-zinc-200 shadow-sm transition-all" aria-label="Next project: LinkedIn">
+              <span class="font-medium">Next</span>
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Rounded case-study nav removed (kept typographic band below) -->
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+    <script src="script.js"></script>
+    <footer class="site-footer" role="contentinfo" aria-label="Footer">
+        <div class="site-footer-inner">
+            <a href="https://www.instagram.com/fro.ggiie?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">My dancing frog</a>
+            <span class="footer-sep">•</span>
+            <a href="https://www.linkedin.com/in/ashley-guo-175a07217/" target="_blank" rel="noopener noreferrer">Let's connect on LinkedIn</a>
+            <span class="footer-sep">•</span>
+            <a href="mailto:ashleyguo2026@u.northwestern.edu">ashleyguo2026@u.northwestern.edu</a>
+        </div>
+    </footer>
+</body>
+</html>

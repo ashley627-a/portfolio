@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Case Study | Ashley Guo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="has-hero-image">
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a class="btn btn-ghost" href="index.html" aria-label="Back to home">← Back to home</a>
+            </div>
+            <div class="nav-links">
+                <a class="btn btn-primary" href="https://www.linkedin.com/in/ashley-guo-175a07217/" target="_blank" rel="noopener noreferrer">Let's connect on LinkedIn</a>
+            </div>
+        </div>
+    </nav>
+    <div class="nav-gap" aria-hidden="true"></div>
+
+    <nav class="fixed bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 z-[9999] w-[90%] md:w-auto max-w-[95vw] pointer-events-none case-nav-pill">
+      <div class="pointer-events-auto bg-white/95 backdrop-blur-2xl border border-zinc-200 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)] rounded-2xl p-1.5 flex items-center gap-1 overflow-x-auto no-scrollbar">
+        <a
+          href="#tt-abstract"
+          onclick="event.preventDefault(); const target1 = document.getElementById('tt-abstract'); if (target1) { window.scrollTo({ top: target1.offsetTop - 100, behavior: 'smooth' }); }"
+          class="nav-item shrink-0 group px-3 md:px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all text-zinc-500 hover:bg-zinc-50"
+        >
+          <div class="dot w-2 h-2 rounded-full transition-all scale-0 opacity-0" style="background-color: #F94762;"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Abstract</span>
+        </a>
+        <a
+          href="#tt-role"
+          onclick="event.preventDefault(); const target2 = document.getElementById('tt-role'); if (target2) { window.scrollTo({ top: target2.offsetTop - 100, behavior: 'smooth' }); }"
+          class="nav-item shrink-0 group px-3 md:px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all text-zinc-500 hover:bg-zinc-50"
+        >
+          <div class="dot w-2 h-2 rounded-full transition-all scale-0 opacity-0" style="background-color: #F94762;"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Role</span>
+        </a>
+        <a
+          href="#tt-context"
+          onclick="event.preventDefault(); const target3 = document.getElementById('tt-context'); if (target3) { window.scrollTo({ top: target3.offsetTop - 100, behavior: 'smooth' }); }"
+          class="nav-item shrink-0 group px-3 md:px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all text-zinc-500 hover:bg-zinc-50"
+        >
+          <div class="dot w-2 h-2 rounded-full transition-all scale-0 opacity-0" style="background-color: #F94762;"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Context</span>
+        </a>
+        <a
+          href="#tt-methods"
+          onclick="event.preventDefault(); const target4 = document.getElementById('tt-methods'); if (target4) { window.scrollTo({ top: target4.offsetTop - 100, behavior: 'smooth' }); }"
+          class="nav-item shrink-0 group px-3 md:px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all text-zinc-500 hover:bg-zinc-50"
+        >
+          <div class="dot w-2 h-2 rounded-full transition-all scale-0 opacity-0" style="background-color: #F94762;"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Methods</span>
+        </a>
+        <a
+          href="#tt-insights"
+          onclick="event.preventDefault(); const target5 = document.getElementById('tt-insights'); if (target5) { window.scrollTo({ top: target5.offsetTop - 100, behavior: 'smooth' }); }"
+          class="nav-item shrink-0 group px-3 md:px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all text-zinc-500 hover:bg-zinc-50"
+        >
+          <div class="dot w-2 h-2 rounded-full transition-all scale-0 opacity-0" style="background-color: #F94762;"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Findings</span>
+        </a>
+        <a
+          href="#tt-impact"
+          onclick="event.preventDefault(); const target6 = document.getElementById('tt-impact'); if (target6) { window.scrollTo({ top: target6.offsetTop - 100, behavior: 'smooth' }); }"
+          class="nav-item shrink-0 group px-3 md:px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all text-zinc-500 hover:bg-zinc-50"
+        >
+          <div class="dot w-2 h-2 rounded-full transition-all scale-0 opacity-0" style="background-color: #F94762;"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Impact</span>
+        </a>
+        <a
+          href="#tt-reflection"
+          onclick="event.preventDefault(); const target7 = document.getElementById('tt-reflection'); if (target7) { window.scrollTo({ top: target7.offsetTop - 100, behavior: 'smooth' }); }"
+          class="nav-item shrink-0 group px-3 md:px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all text-zinc-500 hover:bg-zinc-50"
+        >
+          <div class="dot w-2 h-2 rounded-full transition-all scale-0 opacity-0" style="background-color: #F94762;"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Reflection</span>
+        </a>
+      </div>
+    </nav>
+
+    <div class="fade-in bg-white min-h-screen">
+    <main id="main-content">
+        <!-- 1. HERO -->
+        <header id="tt-hero" class="pt-24 pb-12 md:pb-16 px-6 max-w-[1200px] mx-auto text-center">
+            <img src="assets/tiktok hero image.png" alt="TikTok hero" class="linkedin-hero-img">
+
+            <div class="inline-flex items-center gap-2 mb-8">
+                <div class="case-tags">
+                    <span class="case-tag">Benchmarking &amp; Evaluation</span>
+                    <span class="case-tag">End-to-End Research</span>
+                    <span class="case-tag">Monetization</span>
+                </div>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-extrabold text-zinc-900 mb-8 leading-[1.1] tracking-tight max-w-4xl mx-auto">
+              Helping Small Businesses Use <span class="text-[#fe2c55] italic">Automated Ads</span>
+            </h1>
+            <p class="text-2xl text-zinc-500 leading-relaxed max-w-2xl font-light mx-auto">
+              Understanding why ease of use doesn’t lead to adoption
+            </p>
+        </header>
+
+        <!-- 2. ABSTRACT -->
+        <section id="tt-abstract" class="py-12 md:py-20 border-t border-zinc-50">
+            <div class="max-w-[900px] mx-auto px-6">
+                <h2 class="text-xs font-bold tracking-[0.2em] text-[#fe2c55] uppercase mb-12 flex items-center gap-4">
+                    <span class="h-px w-8 bg-[#fe2c55] inline-block"></span>
+                    Research Abstract
+                </h2>
+                <p class="text-zinc-600 text-xl leading-relaxed font-light">
+                  TikTok  launched GMV Max, a new advertising tool replacing the old system. The goal was simple: help advertisers create and manage campaigns more efficiently. On paper, the new system was easier to use, especially for beginners. Despite the new system’s benefits, many advertisers refused to migrate from the old tools. Research was needed to identify friction points, in order to improve adoption and support user’s transition from old tools to GMV Max.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. ROLE & SCOPE -->
+        <section id="tt-role" class="py-12 md:py-16 bg-zinc-50 border-y border-zinc-100">
+            <div class="max-w-[900px] mx-auto px-6 grid md:grid-cols-3 gap-12">
+                <div>
+                    <h4 class="font-bold text-zinc-900 text-[10px] uppercase tracking-widest mb-4">Role</h4>
+                    <p class="text-zinc-600">UX Researcher, TikTok internship</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-zinc-900 text-[10px] uppercase tracking-widest mb-4">Timeline</h4>
+                    <p class="text-zinc-600">5 weeks</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-zinc-900 text-[10px] uppercase tracking-widest mb-4">Collaboration</h4>
+                    <p class="text-zinc-600">Product, Design, Engineering</p>
+                </div>
+                <div class="md:col-span-3 pt-8 border-t border-zinc-200">
+                    <h4 class="font-bold text-zinc-900 text-[10px] uppercase tracking-widest mb-4">My Responsibilities</h4>
+                    <ul class="grid md:grid-cols-2 gap-y-3 gap-x-12 text-zinc-600 text-sm">
+                        <li>• End-to-end UX research ownership</li>
+                        <li>• Mixed-method research (35 interviews)</li>
+                        <li>• Insight synthesis → product decisions</li>
+                        <li>• Influenced roadmap priorities via stakeholder alignment</li>
+                        <li>• Presented research recommendations (bilingual format)</li>
+                        <li>• Led feature prioritization workshop</li>
+                        <li>• Built a reusable research framework</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. CONTEXT & QUESTION -->
+        <section id="tt-context" class="py-12 md:py-20 bg-white">
+            <div class="max-w-[900px] mx-auto px-6">
+                <h2 class="text-xs font-bold tracking-[0.2em] text-[#fe2c55] uppercase mb-12 flex items-center gap-4">
+                    <span class="h-px w-8 bg-[#fe2c55] inline-block"></span>
+                    Research Context
+                </h2>
+                <div class="space-y-8">
+                  <h3 class="text-4xl font-bold text-zinc-900 leading-tight">The Challenge Behind Migrating To GMV Max</h3>
+                  <div class="space-y-6 text-zinc-500 text-lg leading-relaxed">
+                    <p class="context-intro">TikTok launched GMV Max, a new advertising tool replacing the old system. The goal was simple: help advertisers create and manage ad campaigns more efficiently. On paper, the new system was easier to use, especially for beginners.</p>
+
+                    <p class="context-turn"><span class="turn-strong">Beyond simple usability issues, there was a lack of confidence.</span> Many advertisers refused to migrate from the old tools. If advertisers don’t adopt GMV Max, the company risks wasted product effort, frustrated users, and reduced revenue. Research was needed to identify friction points to improve adoption and support users' transition.</p>
+
+                    <p class="context-meta"><strong>Users:</strong> Advertisers, often small business owners, with a mix of experience levels.</p>
+                  </div>
+                </div>
+
+                <div id="tt-question" class="mt-20 p-12 bg-[#fe2c55]/5 rounded-[2.5rem] border border-[#fe2c55]/10 text-center shadow-sm">
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest text-[#fe2c55] mb-6">Research Question</h4>
+                    <p class="text-3xl md:text-4xl font-light text-zinc-900 italic leading-relaxed">
+                      "How do advertisers <span class="text-[#fe2c55] font-bold underline decoration-[#fe2c55]/20 underline-offset-8">use and evaluate GMV Max</span>, and how does that influence <span class="text-[#fe2c55] font-bold underline decoration-[#fe2c55]/20 underline-offset-8"> adoption</span>?"
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. RESEARCH METHODS -->
+        <section id="tt-methods" class="py-20 md:py-28 bg-zinc-900 text-white">
+            <div class="max-w-[900px] mx-auto px-6">
+                <h2 class="text-xs font-bold tracking-[0.2em] text-[#fe2c55] uppercase mb-16 flex items-center gap-4">
+                    <span class="h-px w-8 bg-[#fe2c55] inline-block"></span>
+                    Research Methods 
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                    <div class="p-8 bg-white/5 rounded-2xl border border-white/10">
+                      <h4 class="font-bold text-xl mb-4 text-white">Mixed interview approach</h4>
+                      <p class="text-zinc-400 text-sm leading-relaxed">Led online semi-structured moderated interviews and configured Dscout unmoderated sessions. <br> <br> Why? <br> To maximize insight depth and pattern discovery while saving time under tight deadlines.</p>
+                    </div>
+                    <div class="p-8 bg-white/5 rounded-2xl border border-white/10">
+                      <h4 class="font-bold text-xl mb-4 text-white">Comparative study design</h4>
+                      <p class="text-zinc-400 text-sm leading-relaxed">Interviewed users of TikTok's tool and another competitor tool in separate sessions. <br> <br> Why? <br> To reduce bias and identify gaps and opportunities, enabling a best-in-class experience for users.</p>
+                    </div>
+                    <div class="p-8 bg-white/5 rounded-2xl border border-white/10">
+                      <h4 class="font-bold text-xl mb-4 text-white">Qual + Quant data collection</h4>
+                      <p class="text-zinc-400 text-sm leading-relaxed"> Pair quantitative UX scores with qualitative insights to understand pain points, workflows, and mental models. <br> <br> Why? <br> To combine depth with scale, pairing behavioral context with measurable patterns.</p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+
+        <!-- 6. TIMELINE & WORKFLOW -->
+        <section id="tt-timeline" class="py-20 md:py-28 bg-white">
+            <div class="max-w-[1200px] mx-auto px-6">
+                <h2 class="text-xs font-bold tracking-[0.2em] text-[#fe2c55] uppercase mb-8 flex items-center gap-4">
+                    <span class="h-px w-8 bg-[#fe2c55] inline-block"></span>
+                    Timeline & Workflow
+                </h2>
+
+                <div class="timeline-row mt-8">
+                  <div class="timeline-inner">
+                    <button class="timeline-chip" data-stage="1" aria-pressed="false" tabindex="0">
+                      <div class="chip-pretitle">Stage 1</div>
+                      <div class="chip-title">Project Kick Off</div>
+                      <div class="timeline-popup" role="tooltip" aria-hidden="true">
+                        <div class="timeline-popup-badges"></div>
+                        <ul class="timeline-popup-list"></ul>
+                      </div>
+                    </button>
+                    <button class="timeline-chip" data-stage="2" aria-pressed="false" tabindex="0">
+                      <div class="chip-pretitle">Stage 2</div>
+                      <div class="chip-title">Preparation</div>
+                      <div class="timeline-popup" role="tooltip" aria-hidden="true">
+                        <div class="timeline-popup-badges"></div>
+                        <ul class="timeline-popup-list"></ul>
+                      </div>
+                    </button>
+                    <button class="timeline-chip" data-stage="3" aria-pressed="false" tabindex="0">
+                      <div class="chip-pretitle">Stage 3</div>
+                      <div class="chip-title">Conduct Research</div>
+                      <div class="timeline-popup" role="tooltip" aria-hidden="true">
+                        <div class="timeline-popup-badges"></div>
+                        <ul class="timeline-popup-list"></ul>
+                      </div>
+                    </button>
+                    <button class="timeline-chip" data-stage="4" aria-pressed="false" tabindex="0">
+                      <div class="chip-pretitle">Stage 4</div>
+                      <div class="chip-title">Analysis</div>
+                      <div class="timeline-popup" role="tooltip" aria-hidden="true">
+                        <div class="timeline-popup-badges"></div>
+                        <ul class="timeline-popup-list"></ul>
+                      </div>
+                    </button>
+                    <button class="timeline-chip" data-stage="5" aria-pressed="false" tabindex="0">
+                      <div class="chip-pretitle">Stage 5</div>
+                      <div class="chip-title">Delivery</div>
+                      <div class="timeline-popup" role="tooltip" aria-hidden="true">
+                        <div class="timeline-popup-badges"></div>
+                        <ul class="timeline-popup-list"></ul>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Modal popup -->
+                <div id="timeline-modal" class="timeline-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="timeline-modal-title">
+                  <div class="timeline-modal-backdrop"></div>
+                  <div class="timeline-modal-panel" role="document">
+                    <button class="timeline-modal-close" aria-label="Close timeline">✕</button>
+                    <h3 id="timeline-modal-title" class="timeline-modal-heading">Stage</h3>
+                    <div class="timeline-modal-content">
+                      <div class="timeline-modal-badges"></div>
+                      <ul class="timeline-modal-list"></ul>
+                      <div class="timeline-modal-cta mt-6"><button class="btn btn-ghost">Open artifacts</button></div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. KEY INSIGHTS -->
+        <section id="tt-insights" class="py-20 md:py-28 bg-white">
+            <div class="max-w-[900px] mx-auto px-6">
+                <h2 class="text-xs font-bold tracking-[0.2em] text-[#fe2c55] uppercase mb-16 flex items-center gap-4">
+                    <span class="h-px w-8 bg-[#fe2c55] inline-block"></span>
+                    Key Findings 
+                </h2>
+
+                <div class="mb-12">
+                  <p class="text-zinc-600 text-sm font-light leading-relaxed">
+                    Despite GMV Max being easier to set up than legacy tools, adoption was lower than expected. Why? <br> <strong>Beyond simple usability issues, there was a lack of confidence. </strong> Advertisers struggled to understand, trust, and be in control of an automated system managing their money.
+                  </p>
+                </div>
+
+                <div class="space-y-12">
+                    <div class="p-10 bg-zinc-50 rounded-[2rem] border border-zinc-100 hover:shadow-lg transition-shadow">
+                      <span class="text-[10px] font-bold text-[#fe2c55] uppercase tracking-widest mb-4 block">Reason 1</span>
+                      <h3 class="text-2xl font-bold mb-4">Unclear return made automation feel risky</h3>
+                      <p class="text-zinc-600 mb-6 italic leading-relaxed"><strong>User:</strong> “I never really know if the system is helping my sales or just burning through my budget. It's hard to interpret the results.”</p>
+                      <div class="pt-6 border-t border-zinc-200">
+                          <h4 class="text-[10px] font-bold text-zinc-900 uppercase tracking-widest mb-2">Insight</h4>
+                          <p class="text-[#fe2c55] font-medium leading-relaxed">When users can't clearly connect spend to outcomes, automation feels risky. To protect themselves, advertisers limited spend, ignored recommendations, or stayed on legacy tools they felt more familiar with.</p>
+                          <div class="mt-6 p-6 bg-white rounded-2xl border border-zinc-100">
+                            <h5 class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest mb-2">Recommendation</h5>
+                            <p class="text-zinc-600 text-sm">Surface all relevant metrics in a unified view, linking spend, ROI, and outcome trends with simple visual cues, enabling users to quickly see performance patterns and interpret results without guessing.</p>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="p-10 bg-zinc-50 rounded-[2rem] border border-zinc-100 hover:shadow-lg transition-shadow">
+                      <span class="text-[10px] font-bold text-[#fe2c55] uppercase tracking-widest mb-4 block">Reason 2</span>
+                      <h3 class="text-2xl font-bold mb-4">Recommendations feel irrelevant or confusing</h3>
+                      <p class="text-zinc-600 italic mb-6 leading-relaxed"><strong>User:</strong> “The recommendations don’t make sense for my business. It’s like the system doesn’t even know what I sell, so I just ignore the recommendations.”</p>
+                      <div class="pt-6 border-t border-zinc-200">
+                          <h4 class="text-[10px] font-bold text-zinc-900 uppercase tracking-widest mb-2">Insight</h4>
+                          <p class="text-[#fe2c55] font-medium leading-relaxed">Without context, recommendations felt generic and easy to ignore, weakening trust in the system's intelligence.</p>
+                          <div class="mt-6 p-6 bg-white rounded-2xl border border-zinc-100">
+                            <h5 class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest mb-2">Recommendation</h5>
+                            <p class="text-zinc-600 text-sm">Personalize suggestions based on advertiser characteristics, past performance, and industry context to improve adoption.</p>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="p-10 bg-zinc-50 rounded-[2rem] border border-zinc-100 hover:shadow-lg transition-shadow">
+                      <span class="text-[10px] font-bold text-[#fe2c55] uppercase tracking-widest mb-4 block">Reason 3</span>
+                      <h3 class="text-2xl font-bold mb-4">Fluctuating ad spend creates frustration</h3>
+                      <p class="text-zinc-600 mb-6 italic leading-relaxed"><strong>User:</strong> “Some days my budget jumps or drops and I have no clue why. It feels like a black box."</p>
+                      <div class="pt-6 border-t border-zinc-200">
+                          <h4 class="text-[10px] font-bold text-zinc-900 uppercase tracking-widest mb-2">Insight</h4>
+                          <p class="text-[#fe2c55] font-medium leading-relaxed">Unexplained budget changes made users anxious and reinforced the feeling that GMV Max was unpredictable. Even when results were fine, the lack of transparency kept them from fully trusting the platform.</p>
+                          <div class="mt-6 p-6 bg-white rounded-2xl border border-zinc-100">
+                            <h5 class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest mb-2">Recommendation</h5>
+                            <p class="text-zinc-600 text-sm">Surface clear explanations for spend changes, helping advertisers understand automation decisions and feel in control.</p>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. IMPACT -->
+        <section id="tt-impact" class="py-20 md:py-32 bg-white border-t border-zinc-50">
+            <div class="max-w-[900px] mx-auto px-6">
+                <h2 class="text-xs font-bold tracking-[0.2em] text-[#fe2c55] uppercase mb-16 flex items-center gap-4">
+                    <span class="h-px w-8 bg-[#fe2c55] inline-block"></span>
+                    Project Impact
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-8 mb-20">
+                    <div class="p-8 bg-[#fe2c55]/5 rounded-3xl border border-[#fe2c55]/10 text-center impact-card">
+                        <div class="text-4xl font-black text-[#fe2c55] mb-2">✓</div>
+                        <p class="text-[12px] font-bold tracking-widest text-zinc-400">Reframed Problem from usability to a trust-in-automation challenge</p>
+                    </div>
+                    <div class="p-8 bg-[#fe2c55]/5 rounded-3xl border border-[#fe2c55]/10 text-center impact-card">
+                        <div class="text-4xl font-black text-[#fe2c55] mb-2">4+</div>
+                        <p class="text-[12px] font-bold tracking-widest text-zinc-400">Roadmap features <br/>influenced</p>
+                    </div>
+                    <div class="p-8 bg-[#fe2c55]/5 rounded-3xl border border-[#fe2c55]/10 text-center impact-card">
+                        <div class="mb-2">
+                          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" role="img" aria-label="Growth chart: benchmarking impact" class="inline-block mx-auto">
+                            <rect width="24" height="24" rx="6" fill="#fff7f8"/>
+                            <path d="M4 15l4-4 4 6 8-10" stroke="#fe2c55" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="8" cy="11" r="1.6" fill="#fe2c55"/>
+                            <circle cx="12" cy="17" r="1.6" fill="#fe2c55"/>
+                            <circle cx="20" cy="7" r="1.6" fill="#fe2c55"/>
+                          </svg>
+                        </div>
+                        <p class="text-[12px] font-bold tracking-widest text-zinc-400">Established a repeatable benchmarking framework to guide future product improvements</p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+
+        <!-- 8. REFLECTION -->
+        <section id="tt-reflection" class="py-20 md:py-32 bg-zinc-900 text-white">
+            <div class="max-w-[900px] mx-auto px-6">
+                <h2 class="text-xs font-bold tracking-[0.2em] text-[#fe2c55] uppercase mb-16">Learnings & Reflection</h2>
+                <div class="grid md:grid-cols-1 gap-12">
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-white text-xl">Strong research partnership starts with understanding team goals</h4>
+                        <p class="text-zinc-400 leading-relaxed text-sm">Being a good research partner meant deeply understanding product goals, constraints, and timelines, while still advocating for users. Aligning insights to what the team was trying to ship can make outcomes stronger.</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-12 pt-8 border-t border-white/10">
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-white text-xl">Prioritization is as important as discovery</h4>
+                            <p class="text-zinc-400 leading-relaxed text-sm">Not all insights are equally valuable. I became more intentional about collaborating with PMs to rank findings by impact and importance, making research easier to use under tight timelines.</p>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-white text-xl">Scalable research creates long-term value</h4>
+                            <p class="text-zinc-400 leading-relaxed text-sm">I learned to think beyond one-off studies by building repeatable frameworks that made future research faster and more consistent.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rounded case-study nav removed (kept typographic band below) -->
+
+        <!-- Typographic band (Option 2) - no Summary -->
+        <div class="case-nav-typographic">
+          <div class="case-nav-inner flex justify-center gap-4">
+            <a href="linkedin.html" class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white text-zinc-700 hover:bg-zinc-100 border border-zinc-200 shadow-sm transition-all" aria-label="Previous project: LinkedIn">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+              <span class="font-medium">Previous</span>
+            </a>
+            <a href="recat.html" class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white text-zinc-700 hover:bg-zinc-100 border border-zinc-200 shadow-sm transition-all" aria-label="Next project: Recat">
+              <span class="font-medium">Next</span>
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="site-footer" role="contentinfo" aria-label="Footer">
+            <div class="site-footer-inner">
+                <a href="https://www.instagram.com/fro.ggiie?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">My dancing frog</a>
+                <span class="footer-sep">•</span>
+                <a href="https://www.linkedin.com/in/ashley-guo-175a07217/" target="_blank" rel="noopener noreferrer">Let's connect on LinkedIn</a>
+                <span class="footer-sep">•</span>
+                <a href="mailto:ashleyguo2026@u.northwestern.edu">ashleyguo2026@u.northwestern.edu</a>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+    <script src="script.js"></script>
+</body>
+</html>
