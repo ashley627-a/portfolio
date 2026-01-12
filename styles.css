@@ -1492,9 +1492,13 @@ body {
 .mosaic-tile:hover { transform: translateY(-6px); box-shadow: 0 24px 50px rgba(0,0,0,0.08); }
 .mosaic-large { order: 1; }
 .mosaic-small { order: 2; }
-.tile-accent { margin-bottom: 0.5rem; color: #F94762; }
-.tile-badge svg { display: block; }
-.tile-stat { display: inline-block; margin-left: 0.5rem; font-size: 0.9rem; color: #6b7280; vertical-align: middle; }
+.tile-accent {
+  margin-bottom: 0.5rem;
+  color: #F94762;
+  display: inline-block;
+  vertical-align: middle;
+}
+.tile-accent svg { display: block; width: 36px; height: 36px; }
 .mosaic-title { font-family: 'Montserrat', sans-serif; font-size: 1.05rem; font-weight:700; margin-bottom:0.35rem; color:#111827; }
 .mosaic-desc { color: #6b7280; margin-bottom:0.6rem; }
 .mosaic-list { list-style: none; padding-left: 0; margin: 0; color: #374151; }
