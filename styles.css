@@ -1493,6 +1493,8 @@ body {
 .mosaic-large { order: 1; }
 .mosaic-small { order: 2; }
 .tile-accent { margin-bottom: 0.5rem; color: #F94762; }
+.tile-badge svg { display: block; }
+.tile-stat { display: inline-block; margin-left: 0.5rem; font-size: 0.9rem; color: #6b7280; vertical-align: middle; }
 .mosaic-title { font-family: 'Montserrat', sans-serif; font-size: 1.05rem; font-weight:700; margin-bottom:0.35rem; color:#111827; }
 .mosaic-desc { color: #6b7280; margin-bottom:0.6rem; }
 .mosaic-list { list-style: none; padding-left: 0; margin: 0; color: #374151; }
