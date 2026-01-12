@@ -1500,9 +1500,10 @@ body {
 .mosaic-list li::before { content: ''; position: absolute; left: 0; top: 0.45rem; width: 8px; height:8px; background:#F94762; border-radius:50%; }
 
 @media (min-width: 768px) {
-  .mosaic-grid { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; align-items: start; }
-  .mosaic-large { grid-column: span 2; grid-row: span 2; }
-  .mosaic-small { grid-column: span 1; }
+  /* On wider screens, stack the mosaic into three vertical rows (single column) */
+  .mosaic-grid { grid-template-columns: 1fr; gap: 1.25rem; align-items: start; }
+  .mosaic-large { grid-column: auto; grid-row: auto; }
+  .mosaic-small { grid-column: auto; }
 }
 
 @media (min-width: 768px) {
