@@ -1499,10 +1499,10 @@ body {
   vertical-align: middle;
 }
 .tile-accent svg { display: block; width: 36px; height: 36px; }
-.mosaic-title { font-family: 'Montserrat', sans-serif; font-size: 1rem; font-weight:700; margin-bottom:0.35rem; color:#111827; }
-.mosaic-desc { color: #6b7280; margin-bottom:0.5rem; font-size:0.95rem; }
+.mosaic-title { font-family: 'Montserrat', sans-serif; font-size: 0.95rem; font-weight:700; margin-bottom:0.3rem; color:#111827; }
+.mosaic-desc { color: #6b7280; margin-bottom:0.4rem; font-size:0.9rem; line-height:1.25; }
 .mosaic-list { list-style: none; padding-left: 0; margin: 0; color: #374151; }
-.mosaic-list li { position: relative; padding-left: 1.2rem; margin-bottom:0.4rem; font-size:0.95rem; }
+.mosaic-list li { position: relative; padding-left: 1.1rem; margin-bottom:0.35rem; font-size:0.9rem; line-height:1.3; }
 .mosaic-list li::before { content: ''; position: absolute; left: 0; top: 0.45rem; width: 8px; height:8px; background:#F94762; border-radius:50%; }
 
 @media (min-width: 768px) {
