@@ -1205,6 +1205,13 @@ body {
     color: #F94762;
 }
 
+/* Soft background for specific buttons */
+.soft-bg {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
 /* Subtle LinkedIn CTA in project headers (nav) */
 .navbar .nav-links .btn-primary {
     background: transparent;
