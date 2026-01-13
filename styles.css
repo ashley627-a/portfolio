@@ -1536,6 +1536,21 @@ body {
   .scrap-caption { text-align: left; }
 }
 
+/* Target the middle (singing) scrap photo to be slightly smaller so it fits nicely */
+.scrapbook-frame .scrap-photo[data-index="1"] {
+  width: 24%;
+  max-width: 200px;
+  left: 36% !important;
+  top: 8% !important;
+}
+
+@media (max-width: 1024px) {
+  .scrapbook-frame .scrap-photo[data-index="1"] {
+    width: 30%;
+    max-width: 180px;
+  }
+}
+
 @media (min-width: 768px) {
   .compact-banner { padding: 0.75rem 1rem !important; }
 }
