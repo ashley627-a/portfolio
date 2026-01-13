@@ -25,75 +25,63 @@
     <div class="nav-gap" aria-hidden="true"></div>
 
     <nav class="fixed bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 z-[9999] w-[90%] md:w-auto max-w-[95vw] pointer-events-none case-nav-pill">
-      <div class="pointer-events-auto">
-        <div class="progress-bar">
-          <div class="progress-fill" id="nav-progress"></div>
-        </div>
-        <div class="flex items-center gap-2 overflow-x-auto no-scrollbar">
-          <a
-            href="#tt-abstract"
-            onclick="event.preventDefault(); const target1 = document.getElementById('tt-abstract'); if (target1) { window.scrollTo({ top: target1.offsetTop - 100, behavior: 'smooth' }); }"
-            class="nav-item shrink-0"
-            data-section="0"
-          >
-            <div class="icon"></div>
-            <span>Abstract</span>
-          </a>
-          <a
-            href="#tt-role"
-            onclick="event.preventDefault(); const target2 = document.getElementById('tt-role'); if (target2) { window.scrollTo({ top: target2.offsetTop - 100, behavior: 'smooth' }); }"
-            class="nav-item shrink-0"
-            data-section="1"
-          >
-            <div class="icon"></div>
-            <span>Role</span>
-          </a>
-          <a
-            href="#tt-context"
-            onclick="event.preventDefault(); const target3 = document.getElementById('tt-context'); if (target3) { window.scrollTo({ top: target3.offsetTop - 100, behavior: 'smooth' }); }"
-            class="nav-item shrink-0"
-            data-section="2"
-          >
-            <div class="icon"></div>
-            <span>Context</span>
-          </a>
-          <a
-            href="#tt-methods"
-            onclick="event.preventDefault(); const target4 = document.getElementById('tt-methods'); if (target4) { window.scrollTo({ top: target4.offsetTop - 100, behavior: 'smooth' }); }"
-            class="nav-item shrink-0"
-            data-section="3"
-          >
-            <div class="icon"></div>
-            <span>Methods</span>
-          </a>
-          <a
-            href="#tt-insights"
-            onclick="event.preventDefault(); const target5 = document.getElementById('tt-insights'); if (target5) { window.scrollTo({ top: target5.offsetTop - 100, behavior: 'smooth' }); }"
-            class="nav-item shrink-0"
-            data-section="4"
-          >
-            <div class="icon"></div>
-            <span>Findings</span>
-          </a>
-          <a
-            href="#tt-impact"
-            onclick="event.preventDefault(); const target6 = document.getElementById('tt-impact'); if (target6) { window.scrollTo({ top: target6.offsetTop - 100, behavior: 'smooth' }); }"
-            class="nav-item shrink-0"
-            data-section="5"
-          >
-            <div class="icon"></div>
-            <span>Impact</span>
-          </a>
-          <a
-            href="#tt-reflection"
-            onclick="event.preventDefault(); const target7 = document.getElementById('tt-reflection'); if (target7) { window.scrollTo({ top: target7.offsetTop - 100, behavior: 'smooth' }); }"
-            class="nav-item shrink-0"
-            data-section="6"
-          >
-            <div class="icon"></div>
-            <span>Reflection</span>
-          </a>
-        </div>
+      <div class="pointer-events-auto bg-white/95 backdrop-blur-2xl border border-zinc-200 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)] rounded-2xl p-1.5 flex items-center gap-1 overflow-x-auto no-scrollbar">
+        <a
+          href="#tt-abstract"
+          onclick="event.preventDefault(); const target1 = document.getElementById('tt-abstract'); if (target1) { window.scrollTo({ top: target1.offsetTop - 100, behavior: 'smooth' }); }"
+          class="nav-item shrink-0 group px-3 md:px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all text-zinc-500 hover:bg-zinc-50"
+        >
+          <div class="dot w-2 h-2 rounded-full transition-all scale-0 opacity-0" style="background-color: #F94762;"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Abstract</span>
+        </a>
+        <a
+          href="#tt-role"
+          onclick="event.preventDefault(); const target2 = document.getElementById('tt-role'); if (target2) { window.scrollTo({ top: target2.offsetTop - 100, behavior: 'smooth' }); }"
+          class="nav-item shrink-0 group px-3 md:px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all text-zinc-500 hover:bg-zinc-50"
+        >
+          <div class="dot w-2 h-2 rounded-full transition-all scale-0 opacity-0" style="background-color: #F94762;"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Role</span>
+        </a>
+        <a
+          href="#tt-context"
+          onclick="event.preventDefault(); const target3 = document.getElementById('tt-context'); if (target3) { window.scrollTo({ top: target3.offsetTop - 100, behavior: 'smooth' }); }"
+          class="nav-item shrink-0 group px-3 md:px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all text-zinc-500 hover:bg-zinc-50"
+        >
+          <div class="dot w-2 h-2 rounded-full transition-all scale-0 opacity-0" style="background-color: #F94762;"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Context</span>
+        </a>
+        <a
+          href="#tt-methods"
+          onclick="event.preventDefault(); const target4 = document.getElementById('tt-methods'); if (target4) { window.scrollTo({ top: target4.offsetTop - 100, behavior: 'smooth' }); }"
+          class="nav-item shrink-0 group px-3 md:px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all text-zinc-500 hover:bg-zinc-50"
+        >
+          <div class="dot w-2 h-2 rounded-full transition-all scale-0 opacity-0" style="background-color: #F94762;"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Methods</span>
+        </a>
+        <a
+          href="#tt-insights"
+          onclick="event.preventDefault(); const target5 = document.getElementById('tt-insights'); if (target5) { window.scrollTo({ top: target5.offsetTop - 100, behavior: 'smooth' }); }"
+          class="nav-item shrink-0 group px-3 md:px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all text-zinc-500 hover:bg-zinc-50"
+        >
+          <div class="dot w-2 h-2 rounded-full transition-all scale-0 opacity-0" style="background-color: #F94762;"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Findings</span>
+        </a>
+        <a
+          href="#tt-impact"
+          onclick="event.preventDefault(); const target6 = document.getElementById('tt-impact'); if (target6) { window.scrollTo({ top: target6.offsetTop - 100, behavior: 'smooth' }); }"
+          class="nav-item shrink-0 group px-3 md:px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all text-zinc-500 hover:bg-zinc-50"
+        >
+          <div class="dot w-2 h-2 rounded-full transition-all scale-0 opacity-0" style="background-color: #F94762;"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Impact</span>
+        </a>
+        <a
+          href="#tt-reflection"
+          onclick="event.preventDefault(); const target7 = document.getElementById('tt-reflection'); if (target7) { window.scrollTo({ top: target7.offsetTop - 100, behavior: 'smooth' }); }"
+          class="nav-item shrink-0 group px-3 md:px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all text-zinc-500 hover:bg-zinc-50"
+        >
+          <div class="dot w-2 h-2 rounded-full transition-all scale-0 opacity-0" style="background-color: #F94762;"></div>
+          <span class="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Reflection</span>
+        </a>
       </div>
     </nav>
 
@@ -407,14 +395,14 @@
 
         <!-- Typographic band (Option 2) - no Summary -->
         <div class="case-nav-typographic">
-          <div class="case-nav-inner flex justify-center gap-4">
-            <a href="linkedin.html" class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white text-zinc-700 hover:bg-zinc-100 border border-zinc-200 shadow-sm transition-all" aria-label="Previous project: LinkedIn">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
-              <span class="font-medium">Previous</span>
+          <div class="case-nav-inner flex justify-center gap-6">
+            <a href="linkedin.html" aria-label="Previous project: LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+              <span>Previous</span>
             </a>
-            <a href="recat.html" class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white text-zinc-700 hover:bg-zinc-100 border border-zinc-200 shadow-sm transition-all" aria-label="Next project: Recat">
-              <span class="font-medium">Next</span>
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            <a href="recat.html" aria-label="Next project: Recat">
+              <span>Next</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
             </a>
           </div>
         </div>
