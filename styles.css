@@ -1205,11 +1205,27 @@ body {
     color: #F94762;
 }
 
-/* Soft background for specific buttons */
-.soft-bg {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+/* Subtle button style for App Store links */
+.btn-subtle {
+    background: #f9fafb;
+    color: #374151;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-subtle:hover,
+.btn-subtle:focus {
+    background: #f3f4f6;
+    border-color: #d1d5db;
+    color: #111827;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Subtle LinkedIn CTA in project headers (nav) */
