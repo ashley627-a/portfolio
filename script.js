@@ -961,3 +961,31 @@ function initTimeline() {
     // silent fail
   }
 }
+
+// Password gate for tiktok.html (client-side, session-based)
+(function(){
+  const PAGE_PASSWORD = 'portfolio2026';
+  const LOCK_KEY = 'tiktok_unlocked_v1';
+  function isUnlocked(){ return sessionStorage.getItem(LOCK_KEY) === '1'; }
+  function unlock(){ sessionStorage.setItem(LOCK_KEY,'1'); hideOverlay(); }
+  function hideOverlay(){ const o=document.getElementById('pw-overlay'); if(o) o.setAttribute('aria-hidden','true'); }
+  function showError(msg){ const e=document.getElementById('pw-error'); if(e) e.textContent = msg; }
+
+  document.addEventListener('DOMContentLoaded', ()=>{
+    const overlay = document.getElementById('pw-overlay');
+    if(!overlay) return;
+    if(isUnlocked()) { hideOverlay(); return; }
+
+    const form = document.getElementById('pw-form');
+    const input = document.getElementById('pw-input');
+
+    form.addEventListener('submit', (ev)=>{
+      ev.preventDefault();
+      const val = input.value || '';
+      if(val === PAGE_PASSWORD){ unlock(); }
+      else { showError('Incorrect password.'); input.value=''; input.focus(); }
+    });
+
+    input.focus();
+  });
+})();
