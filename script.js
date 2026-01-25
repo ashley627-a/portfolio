@@ -968,7 +968,8 @@ function initTimeline() {
   const LOCK_KEY = 'tiktok_unlocked_v1';
   function isUnlocked(){ return sessionStorage.getItem(LOCK_KEY) === '1'; }
   function unlock(){ sessionStorage.setItem(LOCK_KEY,'1'); hideOverlay(); }
-  function hideOverlay(){ const o=document.getElementById('pw-overlay'); if(o) o.setAttribute('aria-hidden','true'); }
+  function hideOverlay(){ const o=document.getElementById('pw-overlay'); if(o) o.setAttribute('aria-hidden','true'); try { document.body.style.overflow = ''; } catch (e) {} }
+  function disableBodyScroll(){ try { document.body.style.overflow = 'hidden'; } catch (e) {} }
   function showError(msg){ const e=document.getElementById('pw-error'); if(e) e.textContent = msg; }
 
   document.addEventListener('DOMContentLoaded', ()=>{
@@ -978,6 +979,11 @@ function initTimeline() {
 
     const form = document.getElementById('pw-form');
     const input = document.getElementById('pw-input');
+
+    // Prevent background scrolling while overlay is visible
+    disableBodyScroll();
+    // prevent touchmove scroll on mobile when overlay active
+    overlay.addEventListener('touchmove', function(e){ e.preventDefault(); }, { passive: false });
 
     form.addEventListener('submit', (ev)=>{
       ev.preventDefault();
